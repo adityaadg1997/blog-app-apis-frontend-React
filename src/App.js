@@ -22,7 +22,7 @@ import UpdateBlog from "./pages/UpdateBlog";
 function App() {
   return (
     <UserProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="{process.env.PUBLIC_URL}">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
